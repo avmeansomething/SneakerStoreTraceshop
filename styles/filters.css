@@ -1,0 +1,124 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+label {
+    font-size: 1vw;
+    color: black;
+}
+
+#filterform input,
+#filterform textarea,
+#add input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #2C3E50;
+    font-size: 10px;
+}
+fieldset{
+    border: 0;
+    width: 4vw;
+}
+#filterform {
+    display: flex;
+    flex-direction: row;
+    margin: 3vw 1vw 0vw 9.2vw;
+    width: 10vw;
+    border-radius: 5%;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25), 0 4px 7px rgba(0,0,0,0.22);
+}
+.fs-title {
+    text-transform: uppercase;
+    color: black;
+    margin: 1vw 0vw;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* to hide the checkbox itself */
+input[type=checkbox]+label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+}
+
+input[type=checkbox]+label:before {
+    content: "\f096";
+}
+
+/* unchecked icon */
+input[type=checkbox]+label:before {
+    letter-spacing: 10px;
+}
+
+/* space between checkbox and label */
+
+input[type=checkbox]:checked+label:before {
+    content: "\f046";
+}
+
+/* checked icon */
+input[type=checkbox]:checked+label:before {
+    letter-spacing: 5px;
+}
+
+/* allow space for check mark */
+.action-button {
+    width: 120px;
+    background: #ce0a32;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 20px;
+    outline: none;
+}
+
+.action
+.action-button:hover,
+.action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ce0a32;
+}
+
+select {
+    background-color: white;
+    border: 2px solid rgb(110, 107, 107);
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    outline: none;
+    padding: 3px;
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 1vw 0vw;
+}
+
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.sneaker_block_two input{
+    padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 20%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 1vw;
+}
+textarea.for_comment{
+    width: 20vw;
+    height: 10vw;
+    margin-bottom: -10px;
+    font-size: 1vw;
+    font-family: 'PT Sans', sans-serif;
+}
